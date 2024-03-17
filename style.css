@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #2f43b0;
+}
+.poster {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 3px 2px 5px rgba(9, 9, 9, 0.608);
+}
+
+.donut_poster {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 450px;
+}
+
+.donut {
+  margin-top: 20px;
+  width: 170px;
+  height: 250px;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
